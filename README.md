@@ -84,6 +84,27 @@ Based on the comparisons between voter turnout and population or age, no strong 
 
 * **After a state’s introduction of VBM options, does the voter turnout proportion change significantly?**
 
+To determine if a state's switch to VBM changed voter turnout, we looked at each of the 5 VBM states individually for all election years between 1980 and 2016. We plotted them on line graphs because we wanted to see the change over a time period which line graphs show well. We compared ballot count, or voter turnout, and voting eligible population.
+
+![Oregon Change](/Visualizations/or_gross.png)      ![Washington Change](/Visualizations/wa_gross.png)
+
+For Oregon and Washington, we found the trend to be that as the voting eligible population increased, so did the voter turnout.
+
+![Colorado Change](/Visualizations/co_gross.png)
+
+For Colorado, it showed a similar trend to Oregon and Washington. However, we did have missing data which was very apparent when plotting it.
+
+![Utah Change](/Visualizations/ut_gross.png)
+
+With Utah, the two metrics diverged; its voting eligible population was growing faster than the voter turnout was increasing.
+
+![Hawaii Change](/Visualizations/hi_gross.png)
+
+Hawaii, which hasn't yet gotten to a VBM election, shows that voter turnout hasn't really changed much in that timespan but the voting eligible population has increased.
+
+**Summary**
+
+Based on the various line graphs, VBM doesn't seem to have increased voter turnout significantly. However, Colorado and Utah have just had one Presidential election since transitioning to VBM so more time is needed to make a better analysis. Hawaii is the one that seems to have to most potential since voter turnout is declining in the lead-up to VBM. Would like to see where that goes in the future. 
 
 * **What is the level of influence of subjective sociopolitical factors on the proportion of voter turnout nationally, and state-by-state?**
 ## Regression Analysis write-up:
