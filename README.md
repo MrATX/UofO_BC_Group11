@@ -18,40 +18,54 @@
 
 ## Datasets Used
 * United States Elections Project Voter Turnout Data
-    #### Organized by state; covering even-year election cycles from 1980 – 2016
+    *Organized by state; covering even-year election cycles from 1980 – 2016*
     ** Placeholder for link
 * Census API Data
-    #### Demographic information by state for 2011 – 2017
+    *Demographic information by state for 2011 – 2017*
     ** Placeholder for link
 
 ## Tasks
 * Data exploration and cleanup
-    ** Census API - Brock Vriesman, post data pull filtering by Johnny Whitaker and Kathy Gural
-    ** United States Elections Project Voter Turnout Data - Johnny Whitaker and Kathy Gural
-    ** Data Merge - Johnny Whitaker and Kathy Gural
+    * Census API - *Brock Vriesman, post data pull filtering by Johnny Whitaker and Kathy Gural*
+    * United States Elections Project Voter Turnout Data - *Johnny Whitaker and Kathy Gural*
+    * Data Merge - *Johnny Whitaker and Kathy Gural*
 * Data Analysis
-    ** Brock Vriesman, Johnny Whitaker and Kathy Gural
+    * Brock Vriesman, Johnny Whitaker and Kathy Gural
 * Regression Analysis
-    ** Brock Vriesman
+    **Brock Vriesman
 * Conclusions
-    ** Brock Vriesman, Johnny Whitaker and Kathy Gural
+    * Brock Vriesman, Johnny Whitaker and Kathy Gural
 
-## Task Details
-### Data Exploration and Cleanup
-    ** Placeholder for data cleansing screenshots and details
+## Data Analysis and Summary
 
-### Data Analysis
+#### Files
+
+* [Data](Data/) - this folder contains the jupyter notebooks used to clean the data as well as the uncleaned data sources, the combined dataset of Census and voter turnout data, and the cleaned output data files
+* [Analysis](Analysis/) - this folder contains the jupyter notebook used during data analysis
+* [Visualizations](Visualizations/) - this folder images of the various plots created during analysis
+
     
+* What is the current state of voter turnout nationally by state?
+To get the big picture of voter turnout nationally, a heatmap was used. This also allowed us to see how the vote by mail (VBM) states compared to all the other states. We used the most recent Presidential election year results because it was the last major election year and it was the first time Colorado and Utah utilized VBM. We found that Oregon, Washington and Colorado had voter turnout rates higher than the national average whereas Utah and Hawaii (not yet using VBM) were below the national average.
 
-Joint Data
-Combination of voter turnout data and census data, joined by state for the even-year election cycles 2012 - 2016
+![2016 Voter Turnout](us_ballot_counts.png)
 
-=======
+* Are there correlations between demographic characteristics of a state’s population and the proportion of voter turnout?
+To get a better idea of how each state's population compares to the other states, we created another heatmap based on population. We found that Washington was the only VMB state that had a population higher than the national average. All 4 of the other VBM states fell below the national average. Compared to the voter turnout heatmap, there appears to be no relationship between voter turnout and a state's population.
 
-# New line on brock_branch
->>>>>>> fc23df1a116f95bfb5a9e73fa3d7d3a9cf6d4f93
+![2016 Population](us_population.png)
 
-================================
+So we thought we'd see if voting age was a factor influencing voter turnout. We created another heatmap based on states' median age. From this we found that Oregon and Hawaii had a median age higher than the national average while Washington, Colorado and Utah had lower median ages. We were kind of surprised to find that Utah had one of the lowest median ages at 30 years old. But, like population, age does not seem to be a factor of any significance in voter turnout.
+
+![2016 Median Age](us_age.png)
+
+*Summary*
+Based on the comparisons between voter turnout and population or age, no strong relationships were found. On average the VBM states have a higher voter turnout than the national average. However, populations and ages in the VBM states were a mix above and below the national averages.
+
+* After a state’s introduction of VBM options, does the voter turnout proportion change significantly?
+
+
+* What is the level of influence of subjective sociopolitical factors on the proportion of voter turnout nationally, and state-by-state?
 ## Regression Analysis write-up:
 
 In addition, we analyzed possible areas of correlation with voter turnout
