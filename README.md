@@ -51,11 +51,12 @@ To incoporate the demographic information from the census data into the voter tu
 Next, several fields from the data featured formatting which needed to be removed so as to conduct mathematical operations with the data. Dollar values had to have dollar signs, commas, and extraneous 0s removed, then be encoded as integers. Percentagees had to have percent signs removed, then be encoded as float values. These changes were implemented and saved into a new dataframe which was saved into csv format as joint_data_12_to_16_noformatting.
 Both dataset were kept so that if we wished to display any values with the dollar or percentage formatting, we could easily do so.
 
-### Data Analysis
-    
+### Data Analysis:
 
-Joint Data
-Combination of voter turnout data and census data, joined by state for the even-year election cycles 2012 - 2016
+We began our analysis by creating dataframes for each of the individual Vote by Mail states, so as to be able to look at their individual trends in voter turnout graphically. After assembling datasets for Oregon, Washington, Colorado, Utah, and Hawaii, we generated two visualizations for each state. The first examines changes in population and gross voter turnout from 1980 - 2016; for Oregon, Washington, & Colorado this shows a most linear and positive correlation. Utah and Hawaii however, display generally negative trends over time in voter turnout, with Hawaii having the largest reduction in voter turnout of any Vote by Mail state. All states display noticeably lower turnouts in non Presidential election years. The second visualization shows proportional voter turnout and displays much less linearly; the plots are defined by steep peaks and valleys of voter turnout, which more explictly exhibit the significantly lower voter turnout in non Presidential election years. On all of the visualizations for the individual Vote by Mail states, the year of the introduction of the Vote by Mail option is highlighted with a vertical golden line, though visually it is difficult to discern if there is any significant change in voter turnout after the introduction of Vote by Mail.
+Building off of the state-by-state visualizations, we generated a table which examines the average voter turnout in Vote by Mail states before and after the introduction of the option. That figure was then compared to the averages of All Vote by Mail states, all Non Vote by Mail states, and all states together. Correlating to previous findings via the visualizations; Oregon, Washington, and Colorado were all above the national average before and after introduction of Vote by Mail, while Utah and Hawaii were below the national average and both states also have an overall decline in voter turnout from 1980 to 2016.
+Cumulatively these findings do not indicate that there is any signficant increase in voter turnout after the introduction of a Vote by Mail option; trends before the introduction appear through both visual and statistical analysis, to continue on very similarly despite introduction of Vote by Mail option.
+    
 
 =======
 
