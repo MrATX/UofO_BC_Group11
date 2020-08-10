@@ -39,6 +39,18 @@
 ## Task Details
 ### Data Exploration and Cleanup
     ** Placeholder for data cleansing screenshots and details
+*Voter Data
+We examained the data structure and evaluated the volume of missing values. The only Vote by Mail state which was missing any data was Colorado, which had two years not included.
+Additionally, less than 15% of the entries had missing values, so we dropped all incomplete rows and ended up with a cleaned dataset which we believed to be of acceptable strength to continue our analyses. Additionally, we added in the state abbreviation category to interact easily with API wrappers and packages. The final dataset was saved into csv format as voter_data.
+
+*Census Data
+Utilizing the Census and US wrappers, we retrieved demographic information from the Census API including factors around age, gender, ethnicity, public infrastructure strength, etc.
+We then organized the data into an aggregate dataframe containing all demographic fields, for all states, for 2012, 2014, and 2016. Encoding of variables was done to increase the legibility and ease of interaction with the API calls. The dataset was saved into csv format as census_data_12_to_16. 
+
+*Joint Data
+To incoporate the demographic information from the census data into the voter turnout data, we then proceeded to create a joint dataset featuring all fields for both datasets covering 2012, 2014, 2016. The merge was conducted using state name as the common field, and an inner join was used so as to not create rows with missing values. The joint dataset was then saveed into csv format as joint_data_12_to_16.
+Next, several fields from the data featured formatting which needed to be removed so as to conduct mathematical operations with the data. Dollar values had to have dollar signs, commas, and extraneous 0s removed, then be encoded as integers. Percentagees had to have percent signs removed, then be encoded as float values. These changes were implemented and saved into a new dataframe which was saved into csv format as joint_data_12_to_16_noformatting.
+Both dataset were kept so that if we wished to display any values with the dollar or percentage formatting, we could easily do so.
 
 ### Data Analysis
     
@@ -48,8 +60,6 @@ Combination of voter turnout data and census data, joined by state for the even-
 
 =======
 
-# New line on brock_branch
->>>>>>> fc23df1a116f95bfb5a9e73fa3d7d3a9cf6d4f93
 
 ================================
 ## Regression Analysis write-up:
