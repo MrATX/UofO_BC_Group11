@@ -14,14 +14,14 @@ Made a change.
 ================================
 Regression Analysis write-up:
 
-In addition, we analyzed possible areas of correlation with voter turnout
+We analyzed possible areas of correlation with voter turnout
 among key Census demographics. Picking several of the most pertinent demos
 from the Datamade Census wrapper, we pulled Census data for the even election
 years between 2012 and 2016, which the team then cleaned and merged.
 
 After adding calculated rate fields to supplement the Census raw counts,
-we ran a regression analysis on three groups: 1) All State/Year combinations (N=134),
-2) All VBM (Vote by Mail) State/Years (n1=15), and 3) All Non-VBM State/Years (n2=119).
+we ran a regression analysis on three groups: 1) All State/Year combinations,
+2) All VBM (Vote by Mail) State/Years, and 3) All Non-VBM State/Years.
 
 The results of the analysis revealed weak correlation between Census fields
 and voter turnout. While disappointing, it did seem somewhat logical that
@@ -34,18 +34,15 @@ strongest correlation to voter turnout: Poverty Rate.
 
 In the 'All States' group the r-value for Poverty Rate was about -0.26 meaning
 as the Poverty Rate goes down, the voter turnout tends to go up. Our next step
-was to pull the VBM and Non-VBM states into their own dataframes and run the
-regression analysis again on both groups.
+was to the regression analysis on the VBM and Non-VBM groups.
 
-What we found was the Non-VBM states tended to look like the All States group,
-which, due to the size of the Non-VBM states group, was not surprising. When
-looking at the VBM states group, however, we did not find the same trend. The
-r-value for Poverty Rate in the VBM group was 0.29. Instead of voter turnout
-going down as Poverty Rate rose, it seemed to be going up.
+What we found was the Non-VBM group tended to look like the All States group,
+which, due to the size of the Non-VBM group, was not surprising. When
+looking at the VBM group, however, we did not find the same trend. The
+r-value for the VBM group was 0.29. Instead of voter turnout
+going down as the Poverty Rate rose, it seemed to be going up.
 
-It is possible we are seeing in the VBM states that allowing citizens to vote
-by mail may benefit, or at least not limit voting based on that economic factor.
-What this may mean is that voting by mail is the effect of enfrancising more
-voters.
-
-While not conclusive, it does provide an area to continue examination.
+Further analysis is needed to understand the potential impact voting by mail may have
+on voters at or below the poverty line in these states. If these results were to
+persist with more data, that would be an indication of the positive impact of the
+VBM system on voter enfranchisement.
