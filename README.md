@@ -86,7 +86,7 @@ Based on the comparisons between voter turnout and population or age, no strong 
 
 To determine if a state's switch to VBM changed voter turnout, we looked at each of the 5 VBM states individually for all election years between 1980 and 2016. We plotted them on line graphs because we wanted to see the change over a time period which line graphs show well. We compared ballot count, or voter turnout, and voting eligible population.
 
-![Oregon Change](/Visualizations/or_gross.png)      ![Washington Change](/Visualizations/wa_gross.png)
+![Oregon Change](/Visualizations/or_gross.png) ![Washington Change](/Visualizations/wa_gross.png)
 
 For Oregon and Washington, we found the trend to be that as the voting eligible population increased, so did the voter turnout.
 
