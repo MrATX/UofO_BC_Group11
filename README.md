@@ -82,29 +82,37 @@ So we thought we'd see if voting age was a factor influencing voter turnout. We 
 
 Based on the comparisons between voter turnout and population or age, no strong relationships were found. On average the VBM states have a higher voter turnout than the national average. However, populations and ages in the VBM states were a mix above and below the national averages.
 
-* **After a state’s introduction of VBM options, does the voter turnout proportion change significantly?**
+* **After a state’s introduction of VBM options, does the voter turnout proportion change significantly?** and 
+* **How has voter turnout changed nationally overall? Nationally for states without VBM options? For states with VBM options?**
 
-To determine if a state's switch to VBM changed voter turnout, we looked at each of the 5 VBM states individually for all election years between 1980 and 2016. We plotted them on line graphs because we wanted to see the change over a time period which line graphs show well. We compared ballot count, or voter turnout, and voting eligible population.
+We began our analysis by creating dataframes for each of the individual Vote by Mail states, so as to be able to look at their individual trends in voter turnout graphically. After assembling datasets for Oregon, Washington, Colorado, Utah, and Hawaii, we generated two visualizations for each state. The first examines changes in population and gross voter turnout from 1980 - 2016; for Oregon, Washington, & Colorado this shows a more linear and positive correlation. Utah and Hawaii however, display generally negative trends over time in voter turnout, with Hawaii having the largest reduction in voter turnout of any Vote by Mail state. All states display noticeably lower turnouts in non Presidential election years.
 
-![Oregon Change](/Visualizations/or_gross.png) ![Washington Change](/Visualizations/wa_gross.png)
+![Oregon Change](/Visualizations/or_gross.png)
 
-For Oregon and Washington, we found the trend to be that as the voting eligible population increased, so did the voter turnout.
+![Washington Change](/Visualizations/wa_gross.png)
 
 ![Colorado Change](/Visualizations/co_gross.png)
 
-For Colorado, it showed a similar trend to Oregon and Washington. However, we did have missing data which was very apparent when plotting it.
-
 ![Utah Change](/Visualizations/ut_gross.png)
-
-With Utah, the two metrics diverged; its voting eligible population was growing faster than the voter turnout was increasing.
 
 ![Hawaii Change](/Visualizations/hi_gross.png)
 
-Hawaii, which hasn't yet gotten to a VBM election, shows that voter turnout hasn't really changed much in that timespan but the voting eligible population has increased.
+ The second visualization shows proportional voter turnout and displays much less linearly; the plots are defined by steep peaks and valleys of voter turnout, which more explictly exhibit the significantly lower voter turnout in non Presidential election years. On all of the visualizations for the individual Vote by Mail states, the year of the introduction of the Vote by Mail option is highlighted with a vertical golden line, though visually it is difficult to discern if there is any significant change in voter turnout after the introduction of Vote by Mail
 
-**Summary**
+ ![Oregon Prop](/Visualizations/or_prop.png)
 
-Based on the various line graphs, VBM doesn't seem to have increased voter turnout significantly. However, Colorado and Utah have just had one Presidential election since transitioning to VBM so more time is needed to make a better analysis. Hawaii is the one that seems to have to most potential since voter turnout is declining in the lead-up to VBM. Would like to see where that goes in the future. 
+ ![Washington Prop](/Visualizations/wa_prop.png)
+
+ ![Colorado Prop](/Visualizations/co_prop.png)
+
+ ![Utah Prop](/Visualizations/ut_prop.png)
+
+ ![Hawaii Prop](/Visualizations/hi_prop.png)
+
+
+Building off of the state-by-state visualizations, we generated a table which examines the average voter turnout in Vote by Mail states before and after the introduction of the option. That figure was then compared to the averages of All Vote by Mail states, all Non Vote by Mail states, and all states together. Correlating to previous findings via the visualizations; Oregon, Washington, and Colorado were all above the national average before and after introduction of Vote by Mail, while Utah and Hawaii were below the national average and both states also have an overall decline in voter turnout from 1980 to 2016.
+
+Cumulatively these findings do not indicate that there is any signficant increase in voter turnout after the introduction of a Vote by Mail option; trends before the introduction appear through both visual and statistical analysis, to continue on very similarly despite introduction of Vote by Mail option.
 
 * **What is the level of influence of subjective sociopolitical factors on the proportion of voter turnout nationally, and state-by-state?**
 ## Regression Analysis write-up:
