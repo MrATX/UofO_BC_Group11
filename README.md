@@ -1,18 +1,58 @@
-# UofO_BC_Group11
-Project 1 repo for Group 11
-<<<<<<< HEAD
-Made a change.
-=======
-<<<<<<< HEAD
-#BRANCH EDIT TESTERZ
+# Vote by Mail (VBM) States and Voter Turnout
+
+### Group 11 Team Members
+* Brock Vriesman
+* Johnny Whitaker
+* Kathy Gural
+
+## Proposal and Hypotheses
+* To conduct an exploration of a potential relationship between the introduction of Vote by Mail (VBM) options in specific states and changes in those states’ voter turnout for Midterm and Presidential election years.
+* Null Hypothesis: A state’s introduction of Vote by Mail (VBM) options does not change voter turnout in the state
+
+## Questions
+* What is the current state of voter turnout nationally by state?
+* How has voter turnout changed nationally overall? Nationally for states without VBM options? For states with VBM options?
+* After a state’s introduction of VBM options, does the voter turnout proportion change significantly?
+* Are there correlations between demographic characteristics of a state’s population and the proportion of voter turnout?
+* What is the level of influence of subjective sociopolitical factors on the proportion of voter turnout nationally, and state-by-state?
+
+## Datasets Used
+* United States Elections Project Voter Turnout Data
+    #### Organized by state; covering even-year election cycles from 1980 – 2016
+    ** Placeholder for link
+* Census API Data
+    #### Demographic information by state for 2011 – 2017
+    ** Placeholder for link
+
+## Tasks
+* Data exploration and cleanup
+    ** Census API - Brock Vriesman, post data pull filtering by Johnny Whitaker and Kathy Gural
+    ** United States Elections Project Voter Turnout Data - Johnny Whitaker and Kathy Gural
+    ** Data Merge - Johnny Whitaker and Kathy Gural
+* Data Analysis
+    ** Brock Vriesman, Johnny Whitaker and Kathy Gural
+* Regression Analysis
+    ** Brock Vriesman
+* Conclusions
+    ** Brock Vriesman, Johnny Whitaker and Kathy Gural
+
+## Task Details
+### Data Exploration and Cleanup
+    ** Placeholder for data cleansing screenshots and details
+
+### Data Analysis
+    
+
+Joint Data
+Combination of voter turnout data and census data, joined by state for the even-year election cycles 2012 - 2016
+
 =======
 
 # New line on brock_branch
->>>>>>> brock_branch
 >>>>>>> fc23df1a116f95bfb5a9e73fa3d7d3a9cf6d4f93
 
 ================================
-Regression Analysis write-up:
+## Regression Analysis write-up:
 
 In addition, we analyzed possible areas of correlation with voter turnout
 among key Census demographics. Picking several of the most pertinent demos
