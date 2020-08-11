@@ -112,6 +112,8 @@ We began our analysis by creating dataframes for each of the individual Vote by 
 
 Building off of the state-by-state visualizations, we generated a table which examines the average voter turnout in Vote by Mail states before and after the introduction of the option. That figure was then compared to the averages of All Vote by Mail states, all Non Vote by Mail states, and all states together. Correlating to previous findings via the visualizations; Oregon, Washington, and Colorado were all above the national average before and after introduction of Vote by Mail, while Utah and Hawaii were below the national average and both states also have an overall decline in voter turnout from 1980 to 2016.
 
+ ![VBM Stats](/Visualizations/vbm_stats_df.png)
+
 Cumulatively these findings do not indicate that there is any signficant increase in voter turnout after the introduction of a Vote by Mail option; trends before the introduction appear through both visual and statistical analysis, to continue on very similarly despite introduction of Vote by Mail option.
 
 * **What is the level of influence of subjective sociopolitical factors on the proportion of voter turnout nationally, and state-by-state?**
@@ -126,6 +128,8 @@ After adding calculated rate fields to supplement the Census raw counts,
 we ran a regression analysis on three groups: 1) All State/Year combinations,
 2) All VBM (Vote by Mail) State/Years, and 3) All Non-VBM State/Years.
 
+ ![Regression Table](/Visualizations/regression_table.png)
+
 The results of the analysis revealed weak correlation between Census fields
 and voter turnout. While disappointing, it did seem somewhat logical that
 factors influencing voter turnout are more nuanced than the characteristics
@@ -139,11 +143,18 @@ In the 'All States' group the r-value for Poverty Rate was about -0.26 meaning
 as the Poverty Rate goes down, the voter turnout tends to go up. Our next step
 was to the regression analysis on the VBM and Non-VBM groups.
 
+ ![Poverty All States](/Visualizations/pov_all_states.png)
+
 What we found was the Non-VBM group tended to look like the All States group,
-which, due to the size of the Non-VBM group, was not surprising. When
-looking at the VBM group, however, we did not find the same trend. The
+which, due to the size of the Non-VBM group, was not surprising. 
+
+ ![Poverty NonVBM](/Visualizations/pov_nonvbm_states.png)
+
+When looking at the VBM group, however, we did not find the same trend. The
 r-value for the VBM group was 0.29. Instead of voter turnout
 going down as the Poverty Rate rose, it seemed to be going up.
+
+ ![Poverty VBM](/Visualizations/pov_vbm_states.png)
 
 Further analysis is needed to understand the potential impact voting by mail may have
 on voters at or below the poverty line in these states. If these results were to
