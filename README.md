@@ -160,3 +160,7 @@ Further analysis is needed to understand the potential impact voting by mail may
 on voters at or below the poverty line in these states. If these results were to
 persist with more data, that would be an indication of the positive impact of the
 VBM system on voter enfranchisement.
+
+## Conclusions:
+
+In conclusion, our group found no significant differences in voter turnout between Vote-by-Mail (VBM) states and Non-VBM states. We also found no significant changes in voter turnout in VBM states before and after Vote-by-Mail implementation. In our regression analysis of Census demographics, we found no strong correlations between any demographic fields and voter turnout, though we did find a potentially interesting difference in the voter turnout/Poverty Rate relationship between VBM and Non-VBM states that may point to a voter enfranchisement benefit to the VBM system, however, further analysis would need to be conducted to see if the pattern persists.
